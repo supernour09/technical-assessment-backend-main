@@ -38,6 +38,7 @@ For testing Infrastructure and Application has it's own test project
 for Domain no need as it is only class definations , for Demo-API will be only calling the Application layer so no need to test it alone and more likly will be in the end to end testing 
 
 So the Solution 
+
 	- Domain : Class for the target Asset
 	- Infrastructure : Service for DateTime to isolate this logic and to be easily replaced , TargetAssetRepo to make async request to get the data 
 	- Application: service for muniplation of the returned data from the repo to add the two new properties 

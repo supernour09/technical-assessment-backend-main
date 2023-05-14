@@ -18,6 +18,9 @@ namespace Demo_API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            //Should be split between the layers and each layer add it's own dependenct injections 
+            //And the link moved to ENV varibles
             builder.Services.AddHttpClient("TargetAssetAPI", c =>
             {
                 c.BaseAddress = new Uri("https://06ba2c18-ac5b-4e14-988c-94f400643ebf.mock.pstmn.io");
