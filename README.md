@@ -39,6 +39,7 @@ for Domain no need as it is only class definations , for Demo-API will be only c
 
 So the Solution 
 
+
 	- Domain : Class for the target Asset
 	- Infrastructure : Service for DateTime to isolate this logic and to be easily replaced , TargetAssetRepo to make async request to get the data 
 	- Application: service for muniplation of the returned data from the repo to add the two new properties 
